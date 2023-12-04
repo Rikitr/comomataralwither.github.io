@@ -1,0 +1,119 @@
+/* FONDO PANTALLA */
+
+body {
+    background-image: url('imagenes/cielo_minecraft.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+.main {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+}
+
+/* BOTON DE VOLVER */
+
+.div_volver {
+    margin-top: 30px;
+    margin-bottom: -30px;
+}
+
+.volver {
+    background-color: white;
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    border: 5px solid #aeaeae;
+    cursor: pointer;
+    transition: background-color 0.5s, font-size 0.5s;
+    margin-top: 20px;
+    box-shadow: 0 5px 20px rgb(255, 255, 255);
+}
+
+.volver:hover  {
+    background-color: rgba(253, 253, 253, 0.333);
+    border-color: #737373;
+}
+
+/* FUENTE PERSONALIZADA */
+
+@font-face {
+    font-family: 'FUENTE_MINECRAFT';
+    src: url('fuentes/fuente_minecraft.ttf') format('truetype');
+}
+
+/* TITULO PAGINA */
+
+.titulo_materiales {
+    text-align: center;
+    font-family: 'FUENTE_MINECRAFT';
+    font-size: 70px;
+    color: white;
+    text-shadow: 0px 10px 50px black;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.bloque_izq {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.399);
+    margin: 20px;
+    padding: 20px;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto_izq {
+    text-align: justify;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0px;
+}
+
+.imagenes_izq {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagenes_izq img {
+    width: 120px;
+    max-width: 100%;
+}
+
+.bloque_der {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.399);
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto_der {
+    text-align: justify;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.lista {
+    flex: 1;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.imagenes_der {
+    display: flex;
+    flex-direction: row;
+}
+
+.imagenes_der img {
+    width: 110px;
+    max-width: 100%;
+}
